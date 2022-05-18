@@ -1,0 +1,292 @@
+/******************************************************************************
+ *      Student: Sean Harrington
+ *         Date: DD MON YYYY
+ *       Course: IT-516 Data Structures & Algorithms
+ *   Assignment: HWxx
+ *
+ *  Merges together the sorted input stream given as command-line arguments
+ *  into a single sorted output stream on standard output.
+ *
+ *  Compile...
+ *  javac-algs4 xxxxx.java
+ *
+ *  Use...
+ *  java-algs4 xxxxx 5 < filename.txt
+ *  java-algs4 xxxxx 10 < filename.txt
+ *
+ ******************************************************************************/
+
+> java-algs4 ItemShuffleSort
+Error: Could not find or load main class ItemShuffleSort
+Caused by: java.lang.ClassNotFoundException: ItemShuffleSort
+
+Duh. I forgot there are input arguments for this code. - SH
+
+***********************************************************************************************************************
+> java-algs4 ItemShuffleSort 1 2 3 4 alpha beta apple
+
+********************************************
+Execution 1 of 5
+********************************************
+Reversing array elements...
+[apple, beta, alpha, 4, 3, 2, 1]
+Shuffling array elements...
+[alpha, 3, apple, beta, 2, 1, 4]
+Sorting array elements alphabetically...
+[1, 2, 3, 4, alpha, apple, beta]
+********************************************
+Execution 2 of 5
+********************************************
+Reversing array elements...
+[apple, beta, alpha, 4, 3, 2, 1]
+Shuffling array elements...
+[apple, 3, 4, 2, 1, beta, alpha]
+Sorting array elements alphabetically...
+[1, 2, 3, 4, alpha, apple, beta]
+********************************************
+Execution 3 of 5
+********************************************
+Reversing array elements...
+[apple, beta, alpha, 4, 3, 2, 1]
+Shuffling array elements...
+[beta, 1, 3, alpha, apple, 2, 4]
+Sorting array elements alphabetically...
+[1, 2, 3, 4, alpha, apple, beta]
+********************************************
+Execution 4 of 5
+********************************************
+Reversing array elements...
+[apple, beta, alpha, 4, 3, 2, 1]
+Shuffling array elements...
+[alpha, apple, 4, beta, 2, 1, 3]
+Sorting array elements alphabetically...
+[1, 2, 3, 4, alpha, apple, beta]
+********************************************
+Execution 5 of 5
+********************************************
+Reversing array elements...
+[apple, beta, alpha, 4, 3, 2, 1]
+Shuffling array elements...
+[1, alpha, beta, 4, 2, apple, 3]
+Sorting array elements alphabetically...
+[1, 2, 3, 4, alpha, apple, beta]
+***********************************************************************************************************************
+
+Interesting to see how it prioritizes numbers before letters. - SH
+
+***********************************************************************************************************************
+> java-algs4 ItemShuffleSort 1 2 3 4 5 6 7 8
+
+********************************************
+Execution 1 of 5
+********************************************
+Reversing array elements...
+[8, 7, 6, 5, 4, 3, 2, 1]
+Shuffling array elements...
+[7, 3, 5, 4, 6, 1, 2, 8]
+Sorting array elements alphabetically...
+[1, 2, 3, 4, 5, 6, 7, 8]
+********************************************
+Execution 2 of 5
+********************************************
+Reversing array elements...
+[8, 7, 6, 5, 4, 3, 2, 1]
+Shuffling array elements...
+[6, 2, 1, 8, 5, 4, 3, 7]
+Sorting array elements alphabetically...
+[1, 2, 3, 4, 5, 6, 7, 8]
+********************************************
+Execution 3 of 5
+********************************************
+Reversing array elements...
+[8, 7, 6, 5, 4, 3, 2, 1]
+Shuffling array elements...
+[3, 4, 1, 2, 7, 6, 5, 8]
+Sorting array elements alphabetically...
+[1, 2, 3, 4, 5, 6, 7, 8]
+********************************************
+Execution 4 of 5
+********************************************
+Reversing array elements...
+[8, 7, 6, 5, 4, 3, 2, 1]
+Shuffling array elements...
+[6, 3, 1, 7, 5, 2, 4, 8]
+Sorting array elements alphabetically...
+[1, 2, 3, 4, 5, 6, 7, 8]
+********************************************
+Execution 5 of 5
+********************************************
+Reversing array elements...
+[8, 7, 6, 5, 4, 3, 2, 1]
+Shuffling array elements...
+[3, 8, 2, 5, 1, 7, 6, 4]
+Sorting array elements alphabetically...
+[1, 2, 3, 4, 5, 6, 7, 8]
+***********************************************************************************************************************
+
+The shuffling and sorting executions work as I expected. - SH
+
+***********************************************************************************************************************
+> java-algs4 ItemShuffleSort 1 2 3 4 5 6 7 8 9
+
+The number of arguments provided, 9, is not between 4 and 8 inclusive.
+***********************************************************************************************************************
+
+***********************************************************************************************************************
+> java-algs4 ItemShuffleSort 1 2 3
+
+The number of arguments provided, 3, is not between 4 and 8 inclusive.
+***********************************************************************************************************************
+
+Logic to accept between 4 and 8 items seems to work fine. - SH
+
+***********************************************************************************************************************
+> java-algs4 ItemShuffleSort pencil apple calculator staple staple staple
+
+********************************************
+Execution 1 of 5
+********************************************
+Reversing array elements...
+[staple, staple, staple, calculator, apple, pencil]
+Shuffling array elements...
+[calculator, staple, pencil, staple, apple, staple]
+Sorting array elements alphabetically...
+[apple, calculator, pencil, staple, staple, staple]
+********************************************
+Execution 2 of 5
+********************************************
+Reversing array elements...
+[staple, staple, staple, calculator, apple, pencil]
+Shuffling array elements...
+[calculator, pencil, staple, staple, apple, staple]
+Sorting array elements alphabetically...
+[apple, calculator, pencil, staple, staple, staple]
+********************************************
+Execution 3 of 5
+********************************************
+Reversing array elements...
+[staple, staple, staple, calculator, apple, pencil]
+Shuffling array elements...
+[staple, staple, pencil, calculator, apple, staple]
+Sorting array elements alphabetically...
+[apple, calculator, pencil, staple, staple, staple]
+********************************************
+Execution 4 of 5
+********************************************
+Reversing array elements...
+[staple, staple, staple, calculator, apple, pencil]
+Shuffling array elements...
+[apple, calculator, staple, staple, staple, pencil]
+Sorting array elements alphabetically...
+[apple, calculator, pencil, staple, staple, staple]
+********************************************
+Execution 5 of 5
+********************************************
+Reversing array elements...
+[staple, staple, staple, calculator, apple, pencil]
+Shuffling array elements...
+[pencil, staple, apple, staple, staple, calculator]
+Sorting array elements alphabetically...
+[apple, calculator, pencil, staple, staple, staple]
+
+***********************************************************************************************************************
+> java-algs4 ItemShuffleSort alpha apple calculator zebra
+
+********************************************
+Execution 1 of 5
+********************************************
+Reversing array elements...
+[zebra, calculator, apple, alpha]
+Shuffling array elements...
+[alpha, zebra, apple, calculator]
+Sorting array elements alphabetically...
+[alpha, apple, calculator, zebra]
+********************************************
+Execution 2 of 5
+********************************************
+Reversing array elements...
+[zebra, calculator, apple, alpha]
+Shuffling array elements...
+[zebra, apple, calculator, alpha]
+Sorting array elements alphabetically...
+[alpha, apple, calculator, zebra]
+********************************************
+Execution 3 of 5
+********************************************
+Reversing array elements...
+[zebra, calculator, apple, alpha]
+Shuffling array elements...
+[alpha, calculator, apple, zebra]
+Sorting array elements alphabetically...
+[alpha, apple, calculator, zebra]
+********************************************
+Execution 4 of 5
+********************************************
+Reversing array elements...
+[zebra, calculator, apple, alpha]
+Shuffling array elements...
+[alpha, calculator, zebra, apple]
+Sorting array elements alphabetically...
+[alpha, apple, calculator, zebra]
+********************************************
+Execution 5 of 5
+********************************************
+Reversing array elements...
+[zebra, calculator, apple, alpha]
+Shuffling array elements...
+[apple, alpha, zebra, calculator]
+Sorting array elements alphabetically...
+[alpha, apple, calculator, zebra]
+***********************************************************************************************************************
+
+***********************************************************************************************************************
+> java-algs4 ItemShuffleSort zebra xylophone 2 first second house 99
+
+********************************************
+Execution 1 of 5
+********************************************
+Reversing array elements...
+[99, house, second, first, 2, xylophone, zebra]
+Shuffling array elements...
+[zebra, first, 2, house, second, xylophone, 99]
+Sorting array elements alphabetically...
+[2, 99, first, house, second, xylophone, zebra]
+********************************************
+Execution 2 of 5
+********************************************
+Reversing array elements...
+[99, house, second, first, 2, xylophone, zebra]
+Shuffling array elements...
+[zebra, house, 99, first, 2, xylophone, second]
+Sorting array elements alphabetically...
+[2, 99, first, house, second, xylophone, zebra]
+********************************************
+Execution 3 of 5
+********************************************
+Reversing array elements...
+[99, house, second, first, 2, xylophone, zebra]
+Shuffling array elements...
+[first, zebra, 99, house, 2, second, xylophone]
+Sorting array elements alphabetically...
+[2, 99, first, house, second, xylophone, zebra]
+********************************************
+Execution 4 of 5
+********************************************
+Reversing array elements...
+[99, house, second, first, 2, xylophone, zebra]
+Shuffling array elements...
+[house, second, 2, 99, first, xylophone, zebra]
+Sorting array elements alphabetically...
+[2, 99, first, house, second, xylophone, zebra]
+********************************************
+Execution 5 of 5
+********************************************
+Reversing array elements...
+[99, house, second, first, 2, xylophone, zebra]
+Shuffling array elements...
+[2, zebra, second, 99, house, xylophone, first]
+Sorting array elements alphabetically...
+[2, 99, first, house, second, xylophone, zebra]
+***********************************************************************************************************************
+
+SUMMARY - This exercise was fairly easy for me. The components seemed to work appropriately

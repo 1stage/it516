@@ -1,0 +1,70 @@
+Building a simple BinarySearchST
+Getting all items from file
+---------------------
+keys  = A  E  I  O  U
+vals  = 0  1  2  3  4
+size  = 5
+
+
+Putting C into BinarySearchST...
+---------------------
+keys  = A  C  E  I  O  U
+vals  = 0  5  1  2  3  4
+size  = 6
+
+
+Putting C (again) into BinarySearchST...
+---------------------
+keys  = A  C  E  I  O  U
+vals  = 0  6  1  2  3  4
+size  = 6
+
+The ^ shows C's rank (1) from BinarySearchST...
+---------------------
+keys  = A  C  E  I  O  U
+vals  = 0  6  1  2  3  4
+index = 0  ^  2  3  4  5
+Deleting C from BinarySearchST...
+---------------------
+keys  = A  E  I  O  U
+vals  = 0  1  2  3  4
+size  = 5
+
+
+Testing floor() and ceiling() for N in BinarySearchST...
+---------------------
+keys  = A  E  I  O  U
+vals  = 0  1  2  3  4
+c/f   =       \  /
+
+Putting N into BinarySearchST...
+---------------------
+keys  = A  E  I  N  O  U
+vals  = 0  1  2  5  3  4
+size  = 6
+
+The ^ shows the min() (A) from BinarySearchST...
+---------------------
+keys  = A  E  I  N  O  U
+vals  = 0  1  2  5  3  4
+min   = ^
+
+Testing deleteMin() (A) from BinarySearchST...
+---------------------
+keys  = E  I  N  O  U
+vals  = 1  2  5  3  4
+size  = 5
+
+
+The ^ shows the max() (U) from BinarySearchST...
+---------------------
+keys  = E  I  N  O  U
+vals  = 1  2  5  3  4
+max   =             ^
+
+Testing deleteMax() (U) from BinarySearchST...
+---------------------
+keys  = E  I  N  O
+vals  = 1  2  5  3
+size  = 4
+
