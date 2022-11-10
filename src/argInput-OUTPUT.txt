@@ -1,0 +1,34 @@
+/******************************************************************************
+ *      Student: Firstname Lastname
+ *         Date: DD MON YYYY
+ *       Course: IT-516 Data Structures & Algorithms
+ *   Assignment: HW00 Output file
+ *
+ ******************************************************************************/
+
+COMPILING...
+~/wk00/src> javac-algs4 argInput.java
+
+First test...
+~/wk00/src> java-algs4 argInput James Joyce
+Hello, James Joyce!
+
+It works!
+
+Testing with not enough argumements...
+~/wk00/src> java-algs4 argInput James
+Too few arguments! Try again with exactly two.
+
+It works!
+
+Testing with too many arguments...
+~/wk00/src> java-algs4 argInput James Newton Howard
+Too many arguments! Try again with only two.
+
+It works!
+
+Conclusion - This was a fairly simple Java program. Figuring out how to combine strings
+together (+ sign) took a bit, particularly with making sure the spaces and arguments were in
+the correct place. Also, the algs4.jar library was not originally added to the project, so
+many of my commands originally showed as errors. Once I got the library added to the project,
+all worked and compiled fine. - Firstname Lastname
