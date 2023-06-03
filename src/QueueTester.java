@@ -47,7 +47,6 @@ public class QueueTester {
         while (!people.isEmpty()) {                                         // Use while loop until Queue isEmpty() is true
             StdOut.println("  " + people.dequeue());                        // Dequeue each person to the output
         }
-        StdOut.println();                                                   // Blank line
         StdOut.println("Queue now has " + people.size() + " people in it."); // Show that Queue has zero people in it now
     }
 }
