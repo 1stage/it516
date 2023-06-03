@@ -25,16 +25,15 @@ public class QueueTester {
 
         StdOut.println("Enqueue people...");
         people.enqueue("Dani Chong");                                      // Use the enqueue() function
-        StdOut.print(people.peek() + " ");                                 // Print the last person we added
+        StdOut.println(people.peek() + " ");                               // Print the last person we added
         people.enqueue("Barbara Perez");                                   // Use the enqueue() function
-        StdOut.print(people.peek() + " ");                                 // Print the last person we added
+        StdOut.println(people.peek() + " ");                               // Print the last person we added
         people.enqueue("Ritesh Solanki");                                  // Use the enqueue() function
-        StdOut.print(people.peek() + " ");                                 // Print the last person we added
+        StdOut.println(people.peek() + " ");                               // Print the last person we added
         people.enqueue("Matthew Gold");                                    // Use the enqueue() function
-        StdOut.print(people.peek() + " ");                                 // Print the last person we added
+        StdOut.println(people.peek() + " ");                               // Print the last person we added
         people.enqueue("Alam Simari");                                     // Use the enqueue() function
-        StdOut.print(people.peek() + " ");                                 // Print the last person we added
-        StdOut.println();
+        StdOut.println(people.peek() + " ");                               // Print the last person we added
         StdOut.println("Queue now has " + people.size() + " people in it."); // Use the size() function
 
         StdOut.println("Iterating through Queue people...");
