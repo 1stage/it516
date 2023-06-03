@@ -1,9 +1,8 @@
-import edu.princeton.cs.algs4.Bag;
 import edu.princeton.cs.algs4.StdOut;
 
 public class BagAsArrayTester {
     public static void main(String[] args) {
-        Bag<String> things = new Bag<String>();                             // Make a new empty Bag called "things"
+        BagAsArray<String> things = new BagAsArray<String>();                             // Make a new empty Bag called "things"
         StdOut.println("Is this new Bag empty? " + things.isEmpty());       // Use the isEmpty() function
         things.add("rock");                                                 // Use the add() function
         StdOut.println("rock");                                             // Print the last thing added
